@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Vue Mastery</title>
+        <!-- Import Styles Using Tailwind CSS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- Import Vue.js using CDN -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app" class="flex">
+            <div>
+                <h1 class="mx-3 text-2xl font-bold">{{product1}}</h1>
+                <p class="mx-4 text-gray-700">{{descriptionProduct1}}</p>
+                <img class="h-48 w-48 rounded-lg object-cover" v-bind:src="imageProduct1" alt="an image of the air sock" />
+            </div>
+
+            <div>
+                <h1 class="mx-3 text-2xl font-bold">{{product2}}</h1>
+                <p class="mx-4 text-gray-700">{{descriptionProduct2}}</p>
+                <img class="h-48 w-48 rounded-lg object-cover" v-bind:src="imageProduct2" alt="an image of the air sock" />
+            </div>
+        </div>
+
+        <!-- Import Js -->
+        <script src="./main.js"></script>
+
+        <!-- Mount App -->
+        <script>
+            // used to plug the app into a piece of our DOM
+            const mountedApp = app.mount('#app');
+        </script>
+    </body>
+</html>
