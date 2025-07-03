@@ -41,7 +41,7 @@ then we can plug in our vue app in in a piece of our DOM as shown bellow:
 
 <figure>
   <img src="readme-images/vuejs-cdn.png" alt="a picture from vuemastery intro-to-vue-3 course" width="600"/>
-  <figcaption>Figure 1: picture from vuemastery intro-to-vue-3 course.</figcaption>
+  <figcaption>Figure 1</b>: picture from vuemastery intro-to-vue-3 course.</figcaption>
 </figure>
 
 #### Using create-vue
@@ -57,8 +57,10 @@ Then we can choose from several features suh as TypeScript and testing support a
 
 <figure>
   <img src="readme-images/examples-of-features-prompted-in-the-terminal.png" alt="a picture from vuemastery intro-to-vue-3 course" width="600"/>
-  <figcaption><b>Figure 2: Examples of features prompted in the terminal.</figcaption>
+  <figcaption><b>Figure 2</b>: Examples of features prompted in the terminal.</figcaption>
 </figure>
+
+---
 
 after [scaffolding](https://vuejs.org/guide/quick-start#creating-a-vue-application) we will have a build setup based on [Vite](https://vite.dev/) ( a tool to manage our app assets hot module replacement) and allow us to use Vue [Single-File Components](https://vuejs.org/guide/scaling-up/sfc.html) (SFCs) which encapsulates the **template**, **logic**, and **styling** of a Vue component in a single file
 
