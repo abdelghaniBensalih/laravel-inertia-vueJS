@@ -60,8 +60,6 @@ Then we can choose from several features suh as TypeScript and testing support a
   <figcaption><b>Figure 2</b>: Examples of features prompted in the terminal.</figcaption>
 </figure>
 
----
-
 after [scaffolding](https://vuejs.org/guide/quick-start#creating-a-vue-application) we will have a build setup based on [Vite](https://vite.dev/) ( a tool to manage our app assets hot module replacement) and allow us to use Vue [Single-File Components](https://vuejs.org/guide/scaling-up/sfc.html) (SFCs) which encapsulates the **template**, **logic**, and **styling** of a Vue component in a single file
 
 #### 📦 Why We Pass an Object with CDN and a Component with create-vue
