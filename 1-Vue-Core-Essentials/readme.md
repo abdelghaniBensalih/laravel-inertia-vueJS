@@ -1,4 +1,4 @@
-## ![Vue Js Logo Picture](image.png)
+## ![Vue Js Logo Picture](readme-images/vuejs.png)
 
 # Resources
 - [Vue js offcial docs](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)
@@ -31,10 +31,31 @@ there are man ways to reate a vue js project like [using CDN](https://vuejs.org/
 #### Using CDN method
 In this case, we should use the script tag:  
 `<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>`
- we can plug in our vue app in in a piece of our DOM as shown bellow:
+
+then we can plug in our vue app in in a piece of our DOM as shown bellow:
 <figure>
-  <img src="image-1.png" alt="a picture from vuemastery intro-to-vue-3 course" width="600"/>
+  <img src="readme-images/vuejs-cdn.png" alt="a picture from vuemastery intro-to-vue-3 course" width="600"/>
   <figcaption>Figure 1: picture from vuemastery intro-to-vue-3 course.</figcaption>
 </figure>
 
 #### Using create-vue
+In this case we run the following command in our command line:
+
+`npm create vue@latest`
+
+This command will install and execute create-vue, the official Vue project scaffolding tool.
+Then we can choose from several features suh as TypeScript and testing support a shown below:
+<figure>
+  <img src="readme-images/examples-of-features-prompted-in-the-terminal.png" alt="a picture from vuemastery intro-to-vue-3 course" width="600"/>
+  <figcaption>Figure 2: Examples of features prompted in the terminal.</figcaption>
+</figure>
+
+after [scaffolding](https://vuejs.org/guide/quick-start#creating-a-vue-application) we will have a build setup based on [Vite](https://vite.dev/) ( a tool to manage our app assets hot module replacement) and allow us to use Vue [Single-File Components](https://vuejs.org/guide/scaling-up/sfc.html) (SFCs) which encapsulates the **template**, **logic**, and **styling** of a Vue component in a single file
+
+#### 📦 Why We Pass an Object with CDN and a Component with create-vue
+
+| Setup          | What You Pass to `createApp()` | Why                          |
+| -------------- | ------------------------------ | ---------------------------- |
+| **CDN**        | Plain JS object                | No components, no build step |
+| **create-vue** | Component (like `App.vue`)     | Modular system with SFCs     |
+
